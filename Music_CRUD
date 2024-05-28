@@ -1,0 +1,77 @@
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+    int choice = 0;
+    Scanner sc = new Scanner(System.in);
+    while (choice != 5) {
+      System.out.println("/n Menu: ");
+      System.out.println("1 - Cadastrar uma música");
+        System.out.println("2 - Ver músicas");
+      System.out.println("3 - Editar música");
+      System.out.println("4 - Excluir música");
+        System.out.println("5 - Sair");
+      System.out.println("Digite a opção desejada: ");
+      choice = sc.nextInt();
+      
+      
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+import java.util.*;
+public class music {
+  private String nome;
+  private String artista;
+  private String album;
+  private int ano;
+  private int duracao;
+  public music(String nome, String artista, String album, int ano, int duracao) {
+    this.nome = nome;
+    this.artista = artista;
+    this.album = album;
+    this.ano = ano;
+    this.duracao = duracao;
+  }
+  public String getNome() {
+    return nome;}
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public String getArtista() {
+    return artista;}
+  public void setArtista(String artista) {
+    this.artista = artista;}
+  public String getAlbum() {
+    return album;}
+  public void setAlbum(String album) {
+    this.album = album;}
+  public int getAno() {
+    return ano;}
+  public void setAno(int ano) {
+    this.ano = ano;}
+  public int getDuracao(){
+  return duracao;}
+  public void setDuracao(int duracao) {
+    this.duracao = duracao;}
+  
+  @Override
+  public String toString() {
+    return "Nome: " + nome + "\nArtista: " + artista + "\nAlbum: " + album + "\nAno: " + ano + "\nDuração: " + duracao;
+  }
+  public String toDisplayString() {
+    return "Nome: " + nome + "\nArtista: " + artista + "\nAlbum: " + album + "\nAno: " + ano + "\nDuração: " + duracao;
+  }
+
+  
+  }
+  
